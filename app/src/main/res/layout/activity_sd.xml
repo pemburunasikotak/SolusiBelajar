@@ -1,50 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/sd"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/sd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    android:orientation="vertical"
     android:clipToOutline="true">
 
-    <View
-        android:id="@+id/bounds"
-        android:layout_width="wrap_content"
-        android:layout_height="54dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="-7dp"
-        android:layout_marginBottom="683dp"
-        android:background="@drawable/bounds" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="100dp">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/wijed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
 
-    <TextView
-        android:id="@+id/item_one"
-        android:layout_width="10dp"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/bounds"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginRight="0dp"
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-        android:layout_marginBottom="12dp"
-        android:gravity="center|top"
-        android:text="@string/item_one"
-        android:textAppearance="@style/item_one" />
+        </com.google.android.material.appbar.AppBarLayout>
 
-    <View
-        android:id="@+id/group_164"
-        android:layout_width="8dp"
-        android:layout_height="29dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="336dp"
-        android:layout_marginTop="8dp"
 
-        android:background="#D3D0D5" />
+        <TextView
+            android:id="@+id/bounds"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:text="@string/sd"
+            android:textSize="20dp"
 
-</RelativeLayout>
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="683dp"
+            android:background="@drawable/bounds" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rectangle_3"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+
+            android:text="@string/matematika">
+
+        </Button>
+
+        <Button
+            android:id="@+id/rectangle_7"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+
+            android:text="@string/bahasa_indonesia">
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rectangle_6"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            android:text="@string/ipa">
+
+        </Button>
+
+        <Button
+            android:id="@+id/rectangle_2"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+
+            android:text="@string/ppkn">
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rectangle_5"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            android:text="@string/matematika">
+
+        </Button>
+
+        <Button
+            android:id="@+id/rectangle_9"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+
+            android:text="@string/bahasa_indonesia">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
 

@@ -20,11 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-<<<<<<< HEAD
-        setContentView(R.layout.activity_login)
-=======
-        setContentView(R.layout.activity_home)
->>>>>>> 29d937925f3f1d9f17a5428e3f087583dab3698a
+        setContentView(R.layout.activity_sd)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 

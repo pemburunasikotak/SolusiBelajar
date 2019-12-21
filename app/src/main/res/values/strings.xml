@@ -15,5 +15,10 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="item_one">SD</string>
+    <string name="sd">SD</string>
+    <string name="matematika">MATEMATIKA</string>
+    <string name="bahasa_indonesia">BAHASA INDONESIA</string>
+    <string name="ipa">IPA</string>
+    <string name="ppkn">PPKN</string>
 
 </resources>
