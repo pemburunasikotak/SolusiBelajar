@@ -1,5 +1,6 @@
 package com.example.uass
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
@@ -13,16 +14,45 @@ import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var btntk : Button
+    private lateinit var btnsd : Button
+    private lateinit var btnsmp : Button
+    private lateinit var btnsma: Button
 
     private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sd)
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
+        setContentView(R.layout.activity_home)
+//        val toolbar: Toolbar = findViewById(R.id.toolbar)
+
+
+        btntk = findViewById(R.id.btnTk)
+        btnsd = findViewById(R.id.btnSD)
+        btnsmp = findViewById(R.id.btnSMP)
+        btnsma = findViewById(R.id.btnSMA)
+
+        btntk.setOnClickListener{
+            startActivity(Intent(this, ActivitySd::class.java))
+        }
+
+        btnsd.setOnClickListener{
+            startActivity(Intent(this, ActivitySmp::class.java))
+        }
+        btnsmp.setOnClickListener{
+            startActivity(Intent(this, ActivitySmp::class.java))
+        }
+        btnsma.setOnClickListener{
+            startActivity(Intent(this, ActivitySd::class.java))
+        }
+
+
+
+//        setSupportActionBar(toolbar)
 
 //        val fab: FloatingActionButton = findViewById(R.id.fab)
 //        fab.setOnClickListener { view ->
