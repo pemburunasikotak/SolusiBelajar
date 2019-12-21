@@ -20,7 +20,7 @@ class SplesScrean: AppCompatActivity() {
         //4second splash time
         Handler().postDelayed({
             //start main activity
-            startActivity(Intent(this@SplesScrean, MainActivity::class.java))
+            startActivity(Intent(this@SplesScrean, ActivityLogin::class.java))
             //finish this activity
             finish()
         },4000)

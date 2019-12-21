@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
+//        val toolbar: Toolbar = findViewById(R.id.toolbar)
 
 
         btntk = findViewById(R.id.btnTk)
@@ -39,6 +39,19 @@ class MainActivity : AppCompatActivity() {
         btntk.setOnClickListener{
             startActivity(Intent(this, ActivitySd::class.java))
         }
+
+        btnsd.setOnClickListener{
+            startActivity(Intent(this, ActivitySmp::class.java))
+        }
+        btnsmp.setOnClickListener{
+            startActivity(Intent(this, ActivitySmp::class.java))
+        }
+        btnsma.setOnClickListener{
+            startActivity(Intent(this, ActivitySd::class.java))
+        }
+
+
+
 //        setSupportActionBar(toolbar)
 
 //        val fab: FloatingActionButton = findViewById(R.id.fab)
