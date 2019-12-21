@@ -20,5 +20,9 @@
     <string name="bahasa_indonesia">BAHASA INDONESIA</string>
     <string name="ipa">IPA</string>
     <string name="ppkn">PPKN</string>
+    <string name="ips">IPS</string>
+    <string name="agama">AGAMA</string>
+    <string name="penjas">PENJAS</string>
+    <string name="tema">TEMA</string>
 
 </resources>

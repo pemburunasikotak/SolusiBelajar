@@ -16,16 +16,7 @@
             android:id="@+id/wijed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/AppTheme.AppBarOverlay">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-        </com.google.android.material.appbar.AppBarLayout>
+            android:theme="@style/AppTheme.AppBarOverlay"/>
 
 
         <TextView
@@ -52,7 +43,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/rectangle_3"
+            android:id="@+id/btn_mtk"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -64,7 +55,7 @@
         </Button>
 
         <Button
-            android:id="@+id/rectangle_7"
+            android:id="@+id/btn_bindo"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -85,7 +76,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/rectangle_6"
+            android:id="@+id/btn_ipa"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -97,7 +88,7 @@
         </Button>
 
         <Button
-            android:id="@+id/rectangle_2"
+            android:id="@+id/btn_pkn"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -118,19 +109,19 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/rectangle_5"
+            android:id="@+id/btn_ips"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
 
-            android:text="@string/matematika">
+            android:text="@string/ips">
 
         </Button>
 
         <Button
-            android:id="@+id/rectangle_9"
+            android:id="@+id/btn_agama"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -138,7 +129,37 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
 
-            android:text="@string/bahasa_indonesia">
+            android:text="@string/agama">
+
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_penjas"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            android:text="@string/penjas">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_tema"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+
+            android:text="@string/tema">
 
         </Button>
     </LinearLayout>
