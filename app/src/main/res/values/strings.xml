@@ -24,5 +24,7 @@
     <string name="agama">AGAMA</string>
     <string name="penjas">PENJAS</string>
     <string name="tema">TEMA</string>
+    <string name="smp">SMP</string>
+    <string name="bahasa_jawa">BAHASA JAWA</string>
 
 </resources>

@@ -43,7 +43,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_mtk"
+            android:id="@+id/btn_mtk_sd"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -55,7 +55,7 @@
         </Button>
 
         <Button
-            android:id="@+id/btn_bindo"
+            android:id="@+id/btn_bindo_sd"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -76,7 +76,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_ipa"
+            android:id="@+id/btn_ipa_sd"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -88,7 +88,7 @@
         </Button>
 
         <Button
-            android:id="@+id/btn_pkn"
+            android:id="@+id/btn_pkn_sd"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -109,7 +109,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_ips"
+            android:id="@+id/btn_ips_sd"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -121,7 +121,7 @@
         </Button>
 
         <Button
-            android:id="@+id/btn_agama"
+            android:id="@+id/btn_agama_sd"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -139,7 +139,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_penjas"
+            android:id="@+id/btn_penjas_sd"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -151,7 +151,7 @@
         </Button>
 
         <Button
-            android:id="@+id/btn_tema"
+            android:id="@+id/btn_tema_sd"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
