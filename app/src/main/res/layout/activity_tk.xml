@@ -41,19 +41,19 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_mtk_sd"
+            android:id="@+id/btn_menggambar_tk"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
             android:layout_marginLeft="10dp"
             android:layout_marginTop="40dp"
 
-            android:text="@string/matematika">
+            android:text="@string/menggambar">
 
         </Button>
 
         <Button
-            android:id="@+id/btn_bindo_sd"
+            android:id="@+id/btn_menulis_tk"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -61,7 +61,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginRight="10dp"
 
-            android:text="@string/bahasa_indonesia">
+            android:text="@string/menulis">
 
         </Button>
 
@@ -74,19 +74,19 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_ipa_sd"
+            android:id="@+id/btn_membaca_tk"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
 
-            android:text="@string/ipa">
+            android:text="@string/membaca">
 
         </Button>
 
         <Button
-            android:id="@+id/btn_pkn_sd"
+            android:id="@+id/btn_mennyanyi_tk"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
@@ -94,7 +94,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
 
-            android:text="@string/ppkn">
+            android:text="Menyanyi">
 
         </Button>
 

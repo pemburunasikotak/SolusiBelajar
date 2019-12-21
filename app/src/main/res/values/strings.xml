@@ -26,5 +26,8 @@
     <string name="tema">TEMA</string>
     <string name="smp">SMP</string>
     <string name="bahasa_jawa">BAHASA JAWA</string>
+    <string name="membaca">Membaca</string>
+    <string name="menulis">Menulis</string>
+    <string name="menggambar">Menggambar</string>
 
 </resources>
