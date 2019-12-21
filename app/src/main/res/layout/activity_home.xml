@@ -36,6 +36,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnTk"
             android:layout_width="118dp"
             android:layout_height="94dp"
             android:layout_alignParentLeft="true"
@@ -47,6 +48,7 @@
         </Button>
 
         <Button
+            android:id="@+id/btnSD"
             android:layout_width="118dp"
             android:layout_height="94dp"
             android:layout_alignParentLeft="true"
@@ -61,6 +63,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnSMP"
             android:layout_width="118dp"
             android:layout_height="94dp"
             android:layout_alignParentLeft="true"
@@ -72,6 +75,7 @@
         </Button>
 
         <Button
+            android:id="@+id/btnSMA"
             android:layout_width="118dp"
             android:layout_height="94dp"
             android:layout_alignParentLeft="true"
