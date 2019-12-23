@@ -38,12 +38,14 @@
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:layout_height="50dp">
-        <ScrollView
-            android:id="@+id/scrolViewSD"
+        <Spinner
+            android:id="@+id/spiner"
+            android:layout_marginLeft="150px"
+            android:layout_marginRight="150px"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        </ScrollView>
+        </Spinner>
     </LinearLayout>
 
 

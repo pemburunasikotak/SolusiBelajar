@@ -37,6 +37,10 @@
         <activity
             android:name=".activity.ActivityTk">
         </activity>
+        <activity
+            android:name=".activity.ActivityMataPelajaran">
+        </activity>
+
     </application>
 
 </manifest>

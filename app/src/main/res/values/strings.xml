@@ -30,5 +30,29 @@
     <string name="menulis">Menulis</string>
     <string name="menggambar">Menggambar</string>
     <string name="sma">SMA</string>
+    <string name="selected_item">selected_item</string>
+
+
+    <string-array name="Kelas_SD">
+        <item>Kelas 1</item>
+        <item>Kelas 2</item>
+        <item>Kelas 3</item>
+        <item>Kelas 4</item>
+        <item>Kelas 5</item>
+        <item>Kelas 6</item>
+    </string-array>
+    <string-array name="Kelas_SMA">
+        <item>Kelas 1</item>
+        <item>Kelas 2</item>
+        <item>Kelas 3</item>
+    </string-array>
+
+    <string-array name="Kelas_SMP">
+        <item>Kelas 1</item>
+        <item>Kelas 2</item>
+        <item>Kelas 3</item>
+
+    </string-array>
+
 
 </resources>
