@@ -2,19 +2,16 @@ package com.example.uass
 
 import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import android.view.Menu
 import android.widget.Button
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.uass.activity.ActivitySd
+import com.example.uass.activity.ActivitySma
+import com.example.uass.activity.ActivitySmp
+import com.example.uass.activity.ActivityTk
+import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +19,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnsd : Button
     private lateinit var btnsmp : Button
     private lateinit var btnsma: Button
+    private lateinit var rvHeroes: RecyclerView
+    private var title = "Mode List"
+    private val list = ArrayList<Pelajaran>()
 
     private lateinit var appBarConfiguration: AppBarConfiguration
 
@@ -37,20 +37,24 @@ class MainActivity : AppCompatActivity() {
         btnsma = findViewById(R.id.btnSMA)
 
         btntk.setOnClickListener{
-            startActivity(Intent(this, ActivitySd::class.java))
+            startActivity(Intent(this, ActivityTk::class.java))
         }
 
         btnsd.setOnClickListener{
-            startActivity(Intent(this, ActivitySmp::class.java))
+            startActivity(Intent(this, ActivitySd::class.java))
         }
         btnsmp.setOnClickListener{
             startActivity(Intent(this, ActivitySmp::class.java))
         }
         btnsma.setOnClickListener{
-            startActivity(Intent(this, ActivitySd::class.java))
+            startActivity(Intent(this, ActivitySma::class.java))
         }
 
+        rvHeroes = findViewById(R.id.recyleView)
+        rvHeroes.setHasFixedSize(true)
 
+        list.addAll(DataPelajaran.listData)
+        showRecyclerCardView()
 
 //        setSupportActionBar(toolbar)
 
@@ -84,4 +88,11 @@ class MainActivity : AppCompatActivity() {
 //        val navController = findNavController(R.id.nav_host_fragment)
 //        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
    }
+
+
+    private fun showRecyclerCardView() {
+        rvHeroes.layoutManager = LinearLayoutManager(this)
+        val cardViewHeroAdapter = CardViewHeroAdapter(list)
+        rvHeroes.adapter = cardViewHeroAdapter
+    }
 }

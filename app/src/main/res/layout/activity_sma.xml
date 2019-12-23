@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/home"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
@@ -22,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_alignParentLeft="true"
-            android:text="TK"
+            android:text="@string/sma"
             android:textSize="20dp"
 
             android:gravity="center"
@@ -41,27 +42,27 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_menggambar_tk"
+            android:id="@+id/btn_mtk_sd"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
             android:layout_marginLeft="10dp"
             android:layout_marginTop="40dp"
 
-            android:text="@string/menggambar">
+            android:text="@string/matematika">
 
         </Button>
 
         <Button
-            android:id="@+id/btn_menulis_tk"
+            android:id="@+id/btn_bindo_sd"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
-            android:layout_marginLeft="49dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="40dp"
             android:layout_marginRight="10dp"
 
-            android:text="@string/menulis">
+            android:text="@string/bahasa_indonesia">
 
         </Button>
 
@@ -74,27 +75,27 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_membaca_tk"
+            android:id="@+id/btn_ipa_sd"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
 
-            android:text="@string/membaca">
+            android:text="@string/ipa">
 
         </Button>
 
         <Button
-            android:id="@+id/btn_mennyanyi_tk"
+            android:id="@+id/btn_pkn_sd"
             android:layout_width="170dp"
             android:layout_height="59dp"
 
-            android:layout_marginLeft="49dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
 
-            android:text="Menyanyi">
+            android:text="@string/ppkn">
 
         </Button>
 
@@ -104,11 +105,63 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="73dp"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ips_sd"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            android:text="@string/ips">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_agama_sd"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+
+            android:text="@string/agama">
+
+        </Button>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="73dp"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_penjas_sd"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+
+            android:text="@string/penjas">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_tema_sd"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+
+            android:text="@string/tema">
+
+        </Button>
+    </LinearLayout>
 
 </LinearLayout>
 
