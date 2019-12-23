@@ -50,11 +50,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ActivitySma::class.java))
         }
 
-        rvHeroes = findViewById(R.id.recyleView)
-        rvHeroes.setHasFixedSize(true)
 
-        list.addAll(DataPelajaran.listData)
-        showRecyclerCardView()
 
 //        setSupportActionBar(toolbar)
 
@@ -90,9 +86,4 @@ class MainActivity : AppCompatActivity() {
    }
 
 
-    private fun showRecyclerCardView() {
-        rvHeroes.layoutManager = LinearLayoutManager(this)
-        val cardViewHeroAdapter = CardViewHeroAdapter(list)
-        rvHeroes.adapter = cardViewHeroAdapter
-    }
 }
