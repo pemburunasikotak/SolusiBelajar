@@ -21,9 +21,9 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var btntk : Button
-    private lateinit var btnsd : Button
-    private lateinit var btnsmp : Button
+    private lateinit var btntk: Button
+    private lateinit var btnsd: Button
+    private lateinit var btnsmp: Button
     private lateinit var btnsma: Button
     private lateinit var rvHeroes: RecyclerView
     private var title = "Mode List"
@@ -36,7 +36,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-//        val toolbar: Toolbar = findViewById(R.id.toolbar)
 
          fungsibtn()
 
@@ -48,19 +47,20 @@ class MainActivity : AppCompatActivity() {
         btnsmp = findViewById(R.id.btnSMP)
         btnsma = findViewById(R.id.btnSMA)
 
-        btntk.setOnClickListener{
+        btntk.setOnClickListener {
             startActivity(Intent(this, ActivityTk::class.java))
         }
 
-        btnsd.setOnClickListener{
+        btnsd.setOnClickListener {
             startActivity(Intent(this, ActivitySd::class.java))
         }
-        btnsmp.setOnClickListener{
+        btnsmp.setOnClickListener {
             startActivity(Intent(this, ActivitySmp::class.java))
         }
-        btnsma.setOnClickListener{
+        btnsma.setOnClickListener {
             startActivity(Intent(this, ActivitySma::class.java))
         }
+<<<<<<< HEAD
 
     }
 
@@ -97,4 +97,7 @@ class MainActivity : AppCompatActivity() {
 //        val navController = findNavController(R.id.nav_host_fragment)
 //        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
 
+=======
+    }
+>>>>>>> 9d46847594d11b1a4de894cfb868dfd1f2692009
 }
