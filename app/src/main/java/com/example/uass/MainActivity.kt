@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-         fungsibtn()
+        fungsibtn()
 
     }
 
@@ -60,8 +60,6 @@ class MainActivity : AppCompatActivity() {
         btnsma.setOnClickListener {
             startActivity(Intent(this, ActivitySma::class.java))
         }
-<<<<<<< HEAD
-
     }
 
 
@@ -97,7 +95,5 @@ class MainActivity : AppCompatActivity() {
 //        val navController = findNavController(R.id.nav_host_fragment)
 //        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
 
-=======
-    }
->>>>>>> 9d46847594d11b1a4de894cfb868dfd1f2692009
+
 }
