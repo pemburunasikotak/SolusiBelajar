@@ -1,5 +1,7 @@
 package com.example.uass
 
+import bersatu.kita.part11.Model.Pelajaran
+
 object DataPelajaran {
 
     private val heroNames = arrayOf("Ahmad Dahlan")
@@ -10,11 +12,12 @@ object DataPelajaran {
         get() {
             val list = arrayListOf<Pelajaran>()
             for (position in heroNames.indices) {
-                val hero = Pelajaran()
-                hero.name = heroNames[position]
-                hero.detail = heroDetails[position]
-                hero.photo = heroImange[position]
-                list.add(hero)
+                val pelajaran = Pelajaran()
+                pelajaran.title = heroNames[position]
+
+                pelajaran.detail = heroDetails[position]
+                pelajaran.gambar = heroImange[position].toString()
+                list.add(pelajaran)
             }
             return list
         }

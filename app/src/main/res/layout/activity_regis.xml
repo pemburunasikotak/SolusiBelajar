@@ -29,31 +29,15 @@
         android:layout_height="38dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="37dp"
-        android:layout_marginBottom="404dp"
+        android:layout_marginBottom="408dp"
         android:gravity="top"
         android:lineSpacingExtra="9sp"
-        android:text="@string/login"
         android:textAppearance="@style/login"
         android:translationY="-4.35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.344" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/group_24"
@@ -69,7 +53,7 @@
         app:layout_constraintVertical_bias="0.763" />
 
     <EditText
-        android:id="@+id/form_passwo"
+        android:id="@+id/tvRegisPaswd"
         android:layout_width="281dp"
         android:layout_height="45dp"
         android:layout_alignParentLeft="true"
@@ -81,11 +65,11 @@
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/form_email"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegisEmail"
         app:layout_constraintVertical_bias="0.034" />
 
     <EditText
-        android:id="@+id/form_email"
+        android:id="@+id/tvRegisEmail"
         android:layout_width="281dp"
         android:layout_height="45dp"
         android:layout_alignParentLeft="true"
@@ -100,7 +84,7 @@
         app:layout_constraintVertical_bias="0.597" />
 
     <Button
-        android:id="@+id/tombol_logi"
+        android:id="@+id/tombol_regis"
         android:layout_width="281dp"
         android:layout_height="45dp"
         android:layout_alignParentLeft="true"
@@ -115,27 +99,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.207"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/form_passwo"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegisPaswd"
         app:layout_constraintVertical_bias="0.013" />
-
-    <Button
-        android:id="@+id/tombol_daftar"
-        android:layout_width="281dp"
-        android:layout_height="45dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="28dp"
-        android:background="#71ADDD"
-        android:text="daftar"
-        android:textColor="#FEFCFF"
-        app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/form_passwo"
-        app:layout_constraintVertical_bias="0.662" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

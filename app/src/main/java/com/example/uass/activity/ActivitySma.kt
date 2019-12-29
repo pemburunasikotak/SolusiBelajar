@@ -21,31 +21,33 @@ class ActivitySma: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sma)
-
-        tampilspiner()
         fungsiButton()
+        tampilspiner()
     }
 
     private fun fungsiButton() {
-        tombol1 = findViewById(R.id.btn_agama_sd)
-        tombol2 = findViewById(R.id.btn_bindo_sd)
-        tombol3 = findViewById(R.id.btn_ipa_sd)
-        tombol4 = findViewById(R.id.btn_ips_sd)
-        tombol5 = findViewById(R.id.btn_mtk_sd)
-        tombol6 = findViewById(R.id.btn_penjas_sd)
-        tombol7 = findViewById(R.id.btn_pkn_sd)
-        tombol8 = findViewById(R.id.btn_tema_sd)
+        tombol1 = findViewById(R.id.btn_agama_sma)
+        tombol2 = findViewById(R.id.btn_bindo_sma)
+        tombol3 = findViewById(R.id.btn_ipa_sma)
+        tombol4 = findViewById(R.id.btn_ips_sma)
+        tombol5 = findViewById(R.id.btn_mtk_sma)
+        tombol6 = findViewById(R.id.btn_penjas_sma)
+        tombol7 = findViewById(R.id.btn_pkn_sma)
+        tombol8 = findViewById(R.id.btn_tema_sma)
 
 
         tombol1.setOnClickListener {
             startActivity(Intent(this, ActivityMataPelajaran::class.java))
+            finish()
         }
 
         tombol2.setOnClickListener {
             startActivity(Intent(this, ActivityMataPelajaran::class.java))
+            finish()
         }
         tombol3.setOnClickListener {
             startActivity(Intent(this, ActivityMataPelajaran::class.java))
+            finish()
         }
         tombol4.setOnClickListener {
             startActivity(Intent(this, ActivityMataPelajaran::class.java))
@@ -67,7 +69,9 @@ class ActivitySma: AppCompatActivity() {
 
     private fun tampilspiner() {
         val languages = resources.getStringArray(R.array.Kelas_SMA)
-        val spinner = findViewById<Spinner>(R.id.spiner)
+
+        // access the spinner
+        val spinner = findViewById<Spinner>(R.id.spinersma)
         if (spinner != null) {
             val adapter = ArrayAdapter(this,
                 android.R.layout.simple_spinner_item, languages)
@@ -88,4 +92,5 @@ class ActivitySma: AppCompatActivity() {
             }
         }
     }
+
 }

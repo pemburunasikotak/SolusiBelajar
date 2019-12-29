@@ -2,16 +2,22 @@ package com.example.uass
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.appcompat.app.AppCompatActivity
+import android.util.Log
 import android.widget.Button
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.RecyclerView
+import bersatu.kita.part11.Model.Pelajaran
 import com.example.uass.activity.ActivitySd
 import com.example.uass.activity.ActivitySma
 import com.example.uass.activity.ActivitySmp
 import com.example.uass.activity.ActivityTk
-import java.util.ArrayList
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
+import java.util.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,12 +31,18 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
 
+    private var TAG = "data"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 //        val toolbar: Toolbar = findViewById(R.id.toolbar)
 
+         fungsibtn()
 
+    }
+
+    private fun fungsibtn() {
         btntk = findViewById(R.id.btnTk)
         btnsd = findViewById(R.id.btnSD)
         btnsmp = findViewById(R.id.btnSMP)
@@ -50,6 +62,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ActivitySma::class.java))
         }
 
+    }
 
 
 //        setSupportActionBar(toolbar)
@@ -83,7 +96,5 @@ class MainActivity : AppCompatActivity() {
 //    override fun onSupportNavigateUp(): Boolean {
 //        val navController = findNavController(R.id.nav_host_fragment)
 //        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
-   }
-
 
 }
