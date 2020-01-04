@@ -1,5 +1,6 @@
 package com.example.uass.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -10,11 +11,7 @@ import bersatu.kita.part11.Model.Pelajaran
 import com.example.uass.ListAdapter
 import com.example.uass.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.*
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -42,24 +39,27 @@ class ActivityMataPelajaran: AppCompatActivity() {
 
     private fun showRecyclerCardView() {
 
+        val cardViewHeroAdapter = ListAdapter(list){pelajaran, i ->
+            val it = Intent(this@ActivityMataPelajaran, ActivityDetailPelajaran::class.java)
+            it.putExtra("detail", pelajaran.detail)
+            it.putExtra("gambar", pelajaran.gambar)
+            startActivity(it)
+        }
 
-        val cardViewHeroAdapter = ListAdapter(list,this)
         rvData.adapter = cardViewHeroAdapter
         rvData.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
         var database = FirebaseDatabase.getInstance()
         val myRef = database.getReference("mata_pelajaran")
         myRef.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) { // This method is called once with the initial value and again
-// whenever data at this location is updated.
-                val value = dataSnapshot.getValue(pelajaranholder::class.java)!!
-                list.addAll(value.mata_pelajaran)
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                val t = object: GenericTypeIndicator<ArrayList<Pelajaran>>(){}
+                val value = dataSnapshot.getValue(t)!!
+                list.addAll(value)
                 cardViewHeroAdapter.notifyDataSetChanged()
-
+                //Log.e("data",Gson().toJson(value))
             }
-
             override fun onCancelled(error: DatabaseError) { // Failed to read value
-
             }
         })}
     class pelajaranholder(var mata_pelajaran:ArrayList<Pelajaran>)

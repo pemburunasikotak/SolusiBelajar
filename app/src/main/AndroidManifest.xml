@@ -44,6 +44,9 @@
         <activity
             android:name=".activity.ActivityMataPelajaran">
         </activity>
+        <activity
+            android:name=".activity.ActivityDetailPelajaran">
+        </activity>
 
     </application>
 

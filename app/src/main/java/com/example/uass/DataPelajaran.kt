@@ -13,7 +13,7 @@ object DataPelajaran {
             val list = arrayListOf<Pelajaran>()
             for (position in heroNames.indices) {
                 val pelajaran = Pelajaran()
-                pelajaran.title = heroNames[position]
+                pelajaran.Nama = heroNames[position]
 
                 pelajaran.detail = heroDetails[position]
                 pelajaran.gambar = heroImange[position].toString()
