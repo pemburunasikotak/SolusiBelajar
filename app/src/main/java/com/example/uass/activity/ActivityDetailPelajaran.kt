@@ -34,7 +34,7 @@ class ActivityDetailPelajaran : AppCompatActivity() {
     private fun tampil() {
         tvData = findViewById(R.id.tv_detail_Pelajaran)
         image = findViewById(R.id.image_detail_Pelajaran)
-
+        tv_judulDetailPelajaran.setText(intent.getStringExtra("nama"))
         tvData.setText(intent.getStringExtra("detail"))
 
         Picasso.get()

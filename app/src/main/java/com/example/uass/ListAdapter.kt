@@ -41,7 +41,7 @@ class ListAdapter(
 
             Picasso.get()
                 .load(pelajaran.gambar)
-                .resize(320, 118)
+                .resize(500,1500)
                 .centerCrop()
                 .into(itemView.Image_detail_studi)
 

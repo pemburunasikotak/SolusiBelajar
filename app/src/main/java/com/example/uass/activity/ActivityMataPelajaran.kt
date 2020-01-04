@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import bersatu.kita.part11.Model.Pelajaran
@@ -22,32 +23,29 @@ class ActivityMataPelajaran: AppCompatActivity() {
     private var list = ArrayList<Pelajaran>()
     private var requestAdapterRecyclerView: ListAdapter? = null
     private var database: DatabaseReference? = null
-
     private val fab_add: FloatingActionButton? = null
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_matapejaran)
         rvData = findViewById(R.id.recyleView)
         rvData.setHasFixedSize(true)
-
-
         showRecyclerCardView()
-
     }
 
     private fun showRecyclerCardView() {
-
         val cardViewHeroAdapter = ListAdapter(list){pelajaran, i ->
             val it = Intent(this@ActivityMataPelajaran, ActivityDetailPelajaran::class.java)
             it.putExtra("detail", pelajaran.detail)
             it.putExtra("gambar", pelajaran.gambar)
+            it.putExtra("nama", pelajaran.Nama)
             startActivity(it)
         }
 
         rvData.adapter = cardViewHeroAdapter
-        rvData.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        //rvData.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+
+        rvData.layoutManager = GridLayoutManager(this, 2)
 
         var database = FirebaseDatabase.getInstance()
         val myRef = database.getReference("mata_pelajaran")
