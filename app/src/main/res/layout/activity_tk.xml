@@ -4,33 +4,35 @@
     android:id="@+id/sd"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/home"
+    android:background="@drawable/back_soal"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="100dp">
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/wijed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/AppTheme.AppBarOverlay"/>
+            android:theme="@style/AppTheme.AppBarOverlay" />
 
 
-        <TextView
+        <Button
             android:id="@+id/bounds"
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_alignParentLeft="true"
-            android:text="TK"
-            android:textSize="20dp"
-
-            android:gravity="center"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
+
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="683dp"
-            android:background="@drawable/bounds" />
+            android:background="#77F015"
+            android:gravity="center"
+            android:text="TK"
+            android:textSize="20dp" />
 
     </LinearLayout>
 
@@ -42,25 +44,27 @@
 
         <Button
             android:id="@+id/btn_menggambar_tk"
-            android:layout_width="170dp"
+            android:layout_width="400px"
             android:layout_height="59dp"
 
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="40dp"
 
+            android:background="#77F015"
             android:text="@string/menggambar">
 
         </Button>
 
         <Button
             android:id="@+id/btn_menulis_tk"
-            android:layout_width="170dp"
+            android:layout_width="400px"
             android:layout_height="59dp"
 
             android:layout_marginLeft="49dp"
             android:layout_marginTop="40dp"
             android:layout_marginRight="10dp"
 
+            android:background="#77F015"
             android:text="@string/menulis">
 
         </Button>
@@ -75,25 +79,27 @@
 
         <Button
             android:id="@+id/btn_membaca_tk"
-            android:layout_width="170dp"
+            android:layout_width="400px"
             android:layout_height="59dp"
 
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="20dp"
 
+            android:background="#77F015"
             android:text="@string/membaca">
 
         </Button>
 
         <Button
             android:id="@+id/btn_mennyanyi_tk"
-            android:layout_width="170dp"
+            android:layout_width="400px"
             android:layout_height="59dp"
 
             android:layout_marginLeft="49dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
 
+            android:background="#77F015"
             android:text="Menyanyi">
 
         </Button>
@@ -104,11 +110,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="73dp"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="73dp"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal" />
 
 </LinearLayout>
 

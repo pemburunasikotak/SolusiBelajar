@@ -4,7 +4,7 @@
     android:id="@+id/home"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/home"
+    android:background="@drawable/back_soal"
     android:orientation="vertical">
 
     <View

@@ -3,9 +3,12 @@ package com.example.uass.activity
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.example.uass.MainActivity
 import com.example.uass.R
 
 @SuppressLint("Registered")
@@ -23,6 +26,25 @@ class ActivitySma: AppCompatActivity() {
         setContentView(R.layout.activity_sma)
         fungsiButton()
         tampilspiner()
+    }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.optionmenu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.getItemId() === R.id.about) {
+            startActivity(Intent(this, Abaut::class.java))
+            finish()
+        } else if (item.getItemId() === R.id.setting) {
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        } else if (item.getItemId() === R.id.help) {
+            startActivity(Intent(this, ActivityDaftar::class.java))
+            finish()
+        }
+        return true
     }
 
     private fun fungsiButton() {

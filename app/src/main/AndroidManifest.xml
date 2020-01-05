@@ -2,14 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.uass">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Sudah Males Mikirr....."
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.Abaut"></activity>
+        <activity android:name=".activity.ActivityBayar" />
+        <activity android:name=".activity.ActivitySoal" />
         <activity
             android:name=".activity.SplesScrean"
             android:label="@string/app_name"
@@ -20,34 +24,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity">
-        </activity>
-        <activity
-            android:name=".activity.ActivityLogin">
-        </activity>
-        <activity
-            android:name=".activity.ActivitySd">
-        </activity>
-        <activity
-            android:name=".activity.ActivitySmp">
-        </activity>
-        <activity
-            android:name=".activity.ActivitySma">
-        </activity>
-        <activity
-            android:name=".activity.ActivityTk">
-        </activity>
-        <activity
-            android:name=".activity.ActivityDaftar">
-        </activity>
-        <activity
-            android:name=".activity.ActivityMataPelajaran">
-        </activity>
-        <activity
-            android:name=".activity.ActivityDetailPelajaran">
-        </activity>
-
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.Zaki" />
+        <activity android:name=".activity.Dorik" />
+        <activity android:name=".activity.Dika" />
+        <activity android:name=".activity.TJ" />
+        <activity android:name=".activity.ActivityLogin" />
+        <activity android:name=".activity.ActivitySd" />
+        <activity android:name=".activity.ActivitySmp" />
+        <activity android:name=".activity.ActivitySma" />
+        <activity android:name=".activity.ActivityTk" />
+        <activity android:name=".activity.ActivityDaftar" />
+        <activity android:name=".activity.ActivityMataPelajaran" />
+        <activity android:name=".activity.ActivityDetailPelajaran" />
     </application>
 
 </manifest>

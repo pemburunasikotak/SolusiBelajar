@@ -1,30 +1,35 @@
 package com.example.uass.activity
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.uass.MainActivity
 import com.example.uass.R
-import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.activity_detailpelajaran.*
+import kotlinx.android.synthetic.main.data_tj.*
 
-
-class ActivityDetailPelajaran : AppCompatActivity() {
-
-    private lateinit var tvData : TextView
-    private lateinit var image : ImageView
+class TJ :AppCompatActivity(){
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detailpelajaran)
+        setContentView(R.layout.data_tj)
 
-        tampil()
-        funtombol()
+        img_ig_Tj.setOnClickListener {
+            val  i  = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/t.junian.k/?hl=id"))
+            startActivity(i)
+        }
+        img_fb_tj.setOnClickListener {
+            val  i  = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/"))
+            startActivity(i)
+        }
+        img_line_tj.setOnClickListener {
+            val  i  = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/"))
+            startActivity(i)
+        }
+
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater = menuInflater
@@ -46,23 +51,5 @@ class ActivityDetailPelajaran : AppCompatActivity() {
         return true
     }
 
-    private fun funtombol() {
-        btn_scroll_View.setOnClickListener {
-            startActivity(Intent(this, ActivityBayar::class.java))
-            finish()
-        }
-    }
 
-    private fun tampil() {
-        tvData = findViewById(R.id.tv_detail_Pelajaran)
-        image = findViewById(R.id.image_detail_Pelajaran)
-        tv_judulDetailPelajaran.setText(intent.getStringExtra("nama"))
-        tvData.setText(intent.getStringExtra("detail"))
-
-        Picasso.get()
-            .load(intent.getStringExtra("gambar"))
-            .resize(500, 300)
-            .centerCrop()
-            .into(image)
-    }
 }

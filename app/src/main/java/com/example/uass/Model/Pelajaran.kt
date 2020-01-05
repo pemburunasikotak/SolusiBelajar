@@ -15,6 +15,8 @@ class Pelajaran{
 
     @PropertyName("nama")
     var Nama: String = ""
+
+
 }
 
 
