@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.uass.MainActivity
 import com.example.uass.R
 
+@Suppress("DEPRECATED_IDENTITY_EQUALS")
 class ActivitySmp : AppCompatActivity() {
     lateinit var tombol1: Button
     lateinit var tombol2: Button
@@ -89,8 +90,8 @@ class ActivitySmp : AppCompatActivity() {
 
     private fun tampilSpiner() {
 
-        val languages = resources.getStringArray(R.array.Kelas_SMA)
-        val spinner = findViewById<Spinner>(R.id.spiner)
+        val languages = resources.getStringArray(R.array.Kelas_SMP)
+        val spinner = findViewById<Spinner>(R.id.spinersmp)
         if (spinner != null) {
             val adapter = ArrayAdapter(this,
                 android.R.layout.simple_spinner_item, languages)

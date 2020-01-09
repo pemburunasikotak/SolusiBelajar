@@ -13,6 +13,7 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_detailpelajaran.*
 
 
+@Suppress("DEPRECATED_IDENTITY_EQUALS")
 class ActivityDetailPelajaran : AppCompatActivity() {
 
     private lateinit var tvData : TextView

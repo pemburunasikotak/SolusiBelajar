@@ -4,7 +4,7 @@
     android:id="@+id/home"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/back_soal"
+    android:background="@drawable/back_datadiri"
     android:orientation="vertical">
 
     <View
@@ -86,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textColor="@color/white"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
                     android:textSize="20dp"
                     android:text="Teguh Junian K">
 
